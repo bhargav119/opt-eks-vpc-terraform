@@ -34,7 +34,7 @@ module "ec2" {
     module.vpc
   ]
 }
-
+/*
 module "eks" {
   source                                = "./modules/eks"
   environment_name                      = var.environment_name
@@ -56,3 +56,5 @@ module "eks" {
   sg_info                               = var.sg_info
   sg_rules_eks_additional               = var.sg_rules_eks_additional
 }
+
+*/

@@ -26,6 +26,7 @@ variable "node_group_iam_role_name" {
     type = string
 }
 
+/*
 # default nodes
 variable "default_node_group_name" {
     type = string
@@ -45,6 +46,10 @@ variable "eks_max_size_default_node" {
 variable "eks_min_size_default_node" {
     type = number
 }
+
+*/
+
+
 # other node groups
 variable "node_group_name" {
     type = list(string)

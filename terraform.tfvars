@@ -93,6 +93,10 @@ instance_count = {
   }
   key_name = "test-frontm"
 
+
+
+  /*
+
 #############################################  eks variable values #######################################
 
 environment_name                      = "test"
@@ -120,7 +124,7 @@ sg_info = {
 sg_rules_eks_additional = {
   htpps_access = { from = 443, to = 443, proto = "tcp", cidr = "10.70.49.110/32", desc = "Allow access to kube" },
 }
-
+*/
 
 
 

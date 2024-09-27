@@ -103,7 +103,7 @@ locals {
 }
 
 
-
+/*
 
 #####################################  eks variables ################################################
 
@@ -164,3 +164,4 @@ variable "sg_info" {
 variable "sg_rules_eks_additional" {
     type = map
 }
+*/
