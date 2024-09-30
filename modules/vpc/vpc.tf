@@ -18,7 +18,7 @@ resource "aws_eip" "nat-eip" {
   tags = merge( { "Name" = "${var.env}-nateip"}, local.vpc_common_tags, {"Environment" = "${var.env}"} )
 }
 resource "aws_nat_gateway" "demo-nat" {
-  allocation_id = aws_eip.nat_eip.id
+  allocation_id = aws_eip.nat-eip.id
   subnet_id = aws_subnet.demo-pub-subnet[0].id 
   tags = merge( { "Name" = "${var.env}-natgw"}, local.vpc_common_tags, {"Environment" = "${var.env}"} )
 }
