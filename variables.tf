@@ -43,9 +43,9 @@ locals {
 #################################  ec2 variables ###############################################################
 
 
-variable "vpc_id" {
-  type = string
-}
+#variable "vpc_id" {
+ # type = string
+#}
 variable "sg_name_ec2" {
   type = map
 }
@@ -64,12 +64,12 @@ variable "sg_rules_test2" {
 variable "sg_rules_test3" {
   type = map
 } 
-variable "priv_sub_id" {
-  type = list(string)
-}
-variable "pub_sub_id" {
-  type = list(string)
-}
+#variable "priv_sub_id" {
+ # type = list(string)
+#}
+#variable "pub_sub_id" {
+ # type = list(string)
+#}
 #variable "priv_sub_azs" {
  # type = list(string)
 #}
