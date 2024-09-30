@@ -30,7 +30,7 @@ output "vpc_igw" {
 }
 
 output "nat_gw" {
-  value = aws_nat_gateway.demo-nat.allocation_id
+  value = aws_nat_gateway.demo-nat.id
 }
 
 
