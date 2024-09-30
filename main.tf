@@ -34,3 +34,25 @@ module "ec2" {
     module.vpc
   ]
 }
+
+module "eks" {
+  source                                = "./modules/eks"
+  environment_name                      = var.environment_name
+  cluster_name                          = var.cluster_name
+  cluster_version                       = var.cluster_version
+  region                                = var.region
+  vpc_id                                = var.vpc_id
+  subnet_ids_for_eks_cluster            = var.subnet_ids_for_eks_cluster
+  subnet_ids_for_eks_cluster_node_group = var.subnet_ids_for_eks_cluster_node_group
+  eks_cluster_role_name                 = var.eks_cluster_role_name
+  node_group_iam_role_name              = var.node_group_iam_role_name
+  node_group_name                       = var.node_group_name
+  eks_instance_type                     = var.eks_instance_type
+  node_disk_size                        = var.node_disk_size
+  eks_desired_size                      = var.eks_desired_size
+  eks_max_size                          = var.eks_max_size
+  eks_min_size                          = var.eks_min_size
+  sg_name                               = var.sg_name
+  sg_info                               = var.sg_info
+  sg_rules_eks_additional               = var.sg_rules_eks_additional
+}
