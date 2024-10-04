@@ -116,12 +116,12 @@ variable "cluster_name" {
 variable "cluster_version" {
     type = string
 }
-variable "subnet_ids_for_eks_cluster" {
-    type = list(string)
-}
-variable "subnet_ids_for_eks_cluster_node_group" {
-    type = list(string)
-}
+#variable "subnet_ids_for_eks_cluster" {
+ #   type = list(string)
+#}
+#variable "subnet_ids_for_eks_cluster_node_group" {
+ #   type = list(string)
+#}
 
 # IAM info
 variable "eks_cluster_role_name" {
