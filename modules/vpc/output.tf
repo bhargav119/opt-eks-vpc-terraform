@@ -6,7 +6,7 @@ output "vpc_cidr" {
   value = aws_vpc.demovpc.cidr_block
 }
 
-output "pub_sub_names" {
+output "pub_sub_id" {
   value = aws_subnet.demo-pub-subnet[*].id
 }
 
@@ -14,7 +14,7 @@ output "pub_sub_cidrs" {
   value = aws_subnet.demo-pub-subnet[*].cidr_block
 }
 
-output "priv_sub_names" {
+output "priv_sub_id" {
   value = aws_subnet.demo-priv-subnet[*].id
 }
 
