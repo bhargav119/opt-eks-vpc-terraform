@@ -40,7 +40,7 @@ module "eks" {
   environment_name                      = var.environment_name
   cluster_name                          = var.cluster_name
   cluster_version                       = var.cluster_version
-  region                                = var.aws_region
+  #region                                = var.aws_region
   vpc_id                                = module.vpc.vpc_id
   subnet_ids_for_eks_cluster            = module.pub_sub_id
   subnet_ids_for_eks_cluster_node_group = module.priv_sub_id
