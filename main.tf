@@ -41,9 +41,9 @@ module "eks" {
   cluster_name                          = var.cluster_name
   cluster_version                       = var.cluster_version
   region                                = var.region
-  vpc_id                                = var.vpc_id
-  subnet_ids_for_eks_cluster            = var.subnet_ids_for_eks_cluster
-  subnet_ids_for_eks_cluster_node_group = var.subnet_ids_for_eks_cluster_node_group
+  vpc_id                                = module.vpc.vpc_id
+  subnet_ids_for_eks_cluster            = module.pub_sub_id
+  subnet_ids_for_eks_cluster_node_group = module.priv_sub_id
   eks_cluster_role_name                 = var.eks_cluster_role_name
   node_group_iam_role_name              = var.node_group_iam_role_name
   node_group_name                       = var.node_group_name
